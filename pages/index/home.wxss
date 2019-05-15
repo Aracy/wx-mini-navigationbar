@@ -1,0 +1,6 @@
+/* pages/index/home.wxss */
+
+navigator {
+    text-align: center;
+    margin-top: 200rpx;
+}

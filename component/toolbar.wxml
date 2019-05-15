@@ -1,0 +1,12 @@
+<!--component/toolbar.wxml-->
+<view wx:if="{{isCustom}}" class='toolbar' style="--Color:{{titleTextColor}};color:var(--Color);background:{{backgroundColor}};{{_navBarStyle}}{{_androidStyle}}">
+    <image class='bg-image' wx:if="{{bgImgSrc}}" src='{{bgImgSrc}}' mode='{{bgImgMode}}' />
+    <view class='op-container' style='{{_opContainerStyle}}'>
+        <view wx:if="{{backEnable}}" class='ic-back' style='{{_iconStyle}}' catchtap='_onBackTap' />
+        <image wx:if="{{menuSrc}}" class='ic-menu' style='{{_iconStyle}}' src='{{menuSrc}}' mode='aspectFit' catchtap='_onMenuTap' />
+    </view>
+    <view class='title'>
+        <image class='loading' wx:if="{{loading}}" mode='aspectFit' src="{{titleTextColor=='black'||titleTextColor=='#000000'||titleTextColor=='#000'?'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIUlEQVQ4T52T4VFCQQyEv+vAErADrECsAO1AK3BLgArcDqQEqACsADoQO6CDc5Z55zzfwAjm3+WSveTypTAwSaNSyrTW+giMgBtgV0pZ1lpXtvf9lNI/SJoBr8AK2AAtOEIRnABvtuct70dA0gIYA8+2d8PKcpaU+8Rtbb/EdxSQpCTmBduHU8nNJyktpbqNbZXO8Qk8nHv51D8BybmNQF4f204FF1uXt49AylnYTm9XWxOY2Y7Q1RaBjCo/f7WApMm/W5AULmbtEzO+OC62jptDBEJZwInISYDOjHEL3DWQgvC0Y+ESkNbAxxGkHmEZ4z3w9AfK78BXa3m4TIEq1ayzff1lqrVmkQLb3HZijvZLoNuLsJ7Ats5xZ9QRXA7X+Ru+5IMh9ZLxOgAAAABJRU5ErkJggg==':'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFklEQVQ4T52T0VECUQxFz+3AErQDrECsQO1AK5ASoAJLkBKwArEC7EDsgA7iHGafs67sCOYLsslN8nISBlZV58ANcAv4+wx4B1bAS5JtPyX9P1U1Bx4NBNZAC1ZIwSnwlGTR8r4FqmoJTID7JFb8ZVXld+M2SR4M2AtU1cxEKyTZHUpuvqpyJLtbJ5mlc3wA12OVR97JnAsFrD5JYgdHW5e3VcB2lkmc7WRrAvMkCp1sCrgqX/5kgaqa/nuEqpKLeXtE16fjaOu42SkgZYKjyEGARta4AS4bSCIs/7JwDEivwNsepB5hrvEKuPsD5Wfgs408PCahshsreH39Y/KQhG2RxJi9/RDo7kLWDWznrFshBVfDc/4C0h2EL4/xC+QAAAAASUVORK5CYII='}}"
+        /> {{title}}
+    </view>
+</view>

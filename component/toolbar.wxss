@@ -1,0 +1,89 @@
+.toolbar {
+    width: auto;
+    font-weight: bold;
+    text-align: center;
+    z-index: 666;
+    font-size: 32rpx;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.loading {
+    width: 32rpx;
+    height: 32rpx;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12rpx;
+    animation: loadAnim 1000ms infinite linear;
+    -webkit-animation: loadAnim 1000ms infinite linear;
+}
+
+@keyframes loadAnim {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loadAnim {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-image {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.op-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.ic-menu {
+    box-sizing: border-box;
+    padding: 10rpx;
+}
+
+.ic-back {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ic-back::after {
+    content: '';
+    width: 20rpx;
+    height: 20rpx;
+    border-left: 3rpx solid var(--Color);
+    border-bottom: 3rpx solid var(--Color);
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}

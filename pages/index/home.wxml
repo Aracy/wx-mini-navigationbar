@@ -1,0 +1,5 @@
+<!--pages/index/home.wxml-->
+
+
+
+<navigator url='/component/index'>跳转页面</navigator>

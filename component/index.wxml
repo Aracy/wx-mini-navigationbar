@@ -1,0 +1,3 @@
+<!--component/index.wxml-->
+
+<toolBar menuSrc='/image/menu_white.png' bindMenuTap='onMenuTap' bgImgSrc='/image/navi-bg.jpg' />
