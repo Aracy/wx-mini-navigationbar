@@ -5,6 +5,5 @@
     "navigationStyle": "custom",
     "navigationBarTitleText": "全部商品",
     "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#000000",
-    "enablePullDownRefresh": true
+    "navigationBarBackgroundColor": "#000000"
 }

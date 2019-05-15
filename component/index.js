@@ -22,7 +22,10 @@ Page({
     onReady: function() {
 
     },
-    onPullDownRefresh() {},
+    
+    onPullDownRefresh() {
+
+    },
 
     onMenuTap() {
         wx.showToast({
