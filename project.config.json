@@ -40,8 +40,16 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "无返回按钮",
+					"pathName": "component/index",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }

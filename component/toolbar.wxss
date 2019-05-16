@@ -68,6 +68,7 @@
 .ic-menu {
     box-sizing: border-box;
     padding: 10rpx;
+    max-height: 100%;
 }
 
 .ic-back {

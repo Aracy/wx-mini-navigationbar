@@ -126,7 +126,7 @@ Component({
             this.setData({
                 _navBarStyle: `padding:${statusBarHeight}px ${SysInfo.windowWidth - MenuRect.left + 10}px ${MenuRect.top - statusBarHeight}px;height:${height}px;line-height:${height}px;font-size:${SysInfo.fontSizeSetting - 2}pt;`,
                 _opContainerStyle: `height:${height}px;left:${SysInfo.windowWidth - MenuRect.right}px`,
-                _iconStyle: `width:${MenuRect.height}px;heigth:${MenuRect.height}px`
+                _iconStyle: `width:${MenuRect.height}px;height:${MenuRect.height}px`
             })
         },
 
