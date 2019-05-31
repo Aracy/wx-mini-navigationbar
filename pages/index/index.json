@@ -1,6 +1,6 @@
 {
     "usingComponents": {
-        "toolBar": "./toolbar"
+        "toolBar": "/component/toolbar"
     },
     "navigationStyle": "custom",
     "navigationBarTitleText": "全部商品",

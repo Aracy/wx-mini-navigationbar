@@ -2,4 +2,4 @@
 
 
 
-<navigator url='/component/index'>跳转页面</navigator>
+<navigator url='/pages/index/index'>跳转页面</navigator>

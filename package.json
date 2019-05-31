@@ -1,0 +1,25 @@
+{
+    "name": "wx-mini-navigationbar",
+    "version": "0.0.1",
+    "description": "",
+    "main": "component/toolbar.js",
+    "scripts": {},
+    "author": "valar.sun",
+    "license": "ISC",
+    "miniprogram": "component",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aracy/wx-mini-navigationbar.git"
+    },
+    "keywords": [
+        "wx-mini-navigationbar",
+        "navigationbar",
+        "wechat-mini-program"
+    ],
+    "bugs": {
+        "url": "https://github.com/Aracy/wx-mini-navigationbar/issues"
+    },
+    "files": [
+        "component"
+    ]
+}

@@ -50,7 +50,7 @@ Component({
      */
     data: {
         _androidStyle: '',
-        isCustom: true
+        isCustom: IsCustom
     },
 
     /**
