@@ -1,5 +1,5 @@
 {
-    "name": "wx-mini-navigationbar",
+    "name": "mini-navigationbar",
     "version": "0.0.1",
     "description": "",
     "main": "component/toolbar.js",

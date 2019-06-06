@@ -30,6 +30,11 @@ Component({
         title: {
             type: String
         },
+        //标题是否居中
+        titleCenter: {
+            type: String,
+            value: false
+        },
         //字体颜色
         titleTextColor: {
             type: String
@@ -86,7 +91,7 @@ Component({
             }
         },
         "backEnable,menuSrc" (backEnable, menuSrc) {
-            if (IsIOS) {
+            if (IsIOS || this.data.titleCenter) {
                 return
             }
             let paddingLeft = SysInfo.windowWidth - MenuRect.right
@@ -101,7 +106,7 @@ Component({
             })
         },
         "loading" (value) {
-            if (IsIOS) {
+            if (IsCustom) {
                 return
             }
             if (value) {

@@ -5,8 +5,11 @@
 ## 使用效果
 
 ![IOS无返回](./doc/1.png)
+
 ![IOS有返回](./doc/2.png)
+
 ![Android无返回](./doc/3.png)
+
 ![Android有返回](./doc/4.png)
 
 
@@ -16,16 +19,18 @@
 
 **属性介绍**
 
-|属性名      |类型      |默认值     |是否必须    |说明
-|-----------|----------|----------|------------|------------------------------------------
-|menuSrc    |String    |''        |否          |按钮图片地址
-|bgImgSrc   |String    |''        |否          |背景图片地址
-|bgImgMode  |String    |aspectFill|否          |背景图片的显示模式
-|title      |String    |''        |否          |标题
-|titleTextColor|String    |''        |否          |字体和按钮以及loading图标的颜色，按钮和loading暂时只有黑白2色
-|backgroundColor|String    |''        |否          |整个标题栏的背景颜色
-|loading      |Boolean    |false        |否          |是否是加载状态
-|backProxy      |Boolean    |false        |否          |是否重写了返回键
+| 属性名          | 类型    | 默认值     | 是否必须 | 说明                                                          |
+|-----------------|---------|------------|----------|---------------------------------------------------------------|
+| menuSrc         | String  | ''         | 否       | 按钮图片地址                                                  |
+| bgImgSrc        | String  | ''         | 否       | 背景图片地址                                                  |
+| bgImgMode       | String  | aspectFill | 否       | 背景图片的显示模式                                            |
+| title           | String  | ''         | 否       | 标题                                                          |
+| titleCenter     | Boolean | false      | 否       | 标题是否居中（这个只对Android机型有效）                       |
+| titleTextColor  | String  | ''         | 否       | 字体和按钮以及loading图标的颜色，按钮和loading暂时只有黑白2色 |
+| backgroundColor | String  | ''         | 否       | 整个标题栏的背景颜色                                          |
+| loading         | Boolean | false      | 否       | 是否是加载状态                                                |
+| backProxy       | Boolean | false      | 否       | 是否重写了返回键                                              |
+
 
 标题栏中属性的默认数据会自动获取json配置以及系统的默认数据，如果不需要动态更改样式，可以在json中设置，组件中同样起作用
 
@@ -33,10 +38,10 @@
 
 **事件介绍**
 
-|属性名      |detail
-|-----------|------------------------------------------
-|NaviBack   |返回的逻辑方法
-|MenuTap    |按钮的点击事件
+| 属性名   | detail         |
+|----------|----------------|
+| NaviBack | 返回的逻辑方法 |
+| MenuTap  | 按钮的点击事件 |
 
 ```json
 "usingComponents": {
